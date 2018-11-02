@@ -51,12 +51,7 @@ public  class Webapp extends Applet implements ActionListener{
 	{  
 	Class.forName("com.mysql.jdbc.Driver");  
 	Connection con=DriverManager.getConnection( 
-	"jdbc:mysql://localhost:8080/iyan","admin","admin");  
-	/*Statement stmt=con.createStatement();  
-	ResultSet rs=stmt.executeQuery("select * from emp");  
-	while(rs.next())  
-	(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3));  
-	con.close();*/  
+	"jdbc:mysql://localhost:8080/iyan","admin","admin");    
 	}
 	catch(Exception e)
 	{
@@ -84,7 +79,8 @@ public void paint(Graphics g )
 }
 public static void main(Strings[] args)
 {
-	Webapp();
+	Webapp w=new Webapp();
+	w.Webapp();
 	paint p=new paint();
 	p.paint();
 }
