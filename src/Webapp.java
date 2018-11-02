@@ -82,3 +82,9 @@ public void paint(Graphics g )
 	}
 }
 }
+public static void main(Strings[] args)
+{
+	Webapp();
+	paint p=new paint();
+	p.paint();
+}
